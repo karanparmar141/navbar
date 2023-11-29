@@ -4,6 +4,7 @@ import Home from './Home'
 import Men from './Men'
 import Women from './Women'
 import Kids from './Kids'
+import Single from './Single'
 
 const Allrouter = () => {
     return (
@@ -11,6 +12,7 @@ const Allrouter = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/Men' element={<Men/>} />
+                <Route path='/men/:id' element={<Single/>}/>
                 <Route path='/Kids' element={<Women />} />
                 <Route path='/Women' element={<Kids />} />
             </Routes>
